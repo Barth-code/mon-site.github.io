@@ -1,38 +1,40 @@
+/* Style global pour l'application */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styles pour le menu de navigation */
+.nav-menu {
+  display: flex;
+  justify-content: center; /* Centre les éléments horizontalement */
+  list-style: none; /* Supprime les puces des éléments de la liste */
+  padding: 0;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-menu li {
+  margin: 0 15px; /* Espace horizontal entre les éléments du menu */
+}
+
+.nav-menu li a {
+  color: #61dafb;
+  text-decoration: none; /* Supprime le soulignement par défaut des liens */
+  font-size: 1.2em; /* Ajuste la taille de la police des liens */
+  display: block;
+  padding: 10px 0; /* Ajoute du padding pour augmenter la zone cliquable */
+}
+
+.nav-menu li a:hover {
+  text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Style pour le contenu principal */
+main {
+  padding: 20px;
 }
